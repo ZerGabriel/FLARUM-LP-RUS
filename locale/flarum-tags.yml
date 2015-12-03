@@ -1,0 +1,100 @@
+flarum-tags:
+
+  ##
+  # UNIQUE KEYS - The following keys are used in only one location each.
+  ##
+
+  # Strings in this namespace are used by the admin interface.
+  admin:
+
+    # These strings are used in the Basics page.
+    basics:
+      tags_label: => flarum-tags.ref.tags
+
+    # These strings are used in the Edit Tag modal dialog.
+    edit_tag:
+      color_label: "Цвет"
+      description_label: "Описание"
+      delete_tag_button: "Удалить"
+      delete_tag_confirmation: "Вы уверены, что хотите удалить этот тег? Дискуссии, отмеченные этим тегом, удалены НЕ будут."
+      hide_label: "Скрыть из Все дискуссии"
+      name_label: => flarum-tags.ref.name
+      name_placeholder: => flarum-tags.ref.name
+      slug_label: "Путь"
+      submit_button: => core.ref.save_changes
+      title: => flarum-tags.ref.create_tag
+
+    # These strings are used in the navigation bar.
+    nav:
+      tags_button: => flarum-tags.ref.tags
+      tags_text: "Управление списком тегов, доступных для структурирования дискуссий."
+
+    # These strings are used in the Permissions page of the admin interface.
+    permissions:
+      restrict_by_tag_heading: "Разграничение по тегу"
+      tag_discussions_label: "Tag discussions"
+
+    # These strings are used in the Tag Settings modal dialog.
+    tag_settings:
+      range_separator_text: " - "
+      required_primary_heading: "Количество основных тегов"
+      required_primary_text: "Введите минимальное и максимальное число основных тегов, которые будут добавлены к дискуссии."
+      required_secondary_heading: "Количество дополнительных тегов"
+      required_secondary_text: "Введите минимальное и максимальное число дополнительных тегов, которые будут добавлены к дискуссии."
+      title: "Настройка"
+
+    # These strings are used in the Tags page.
+    tags:
+      about_tags_text: "Теги используются для структурирования дискуссий. Основные теги подобны традиционным категориям форума: они могут представлять собой двухуровневую иерархию. Дополнительные теги не имеют иерархии и могут быть полезны для микро-структурирования."
+      create_tag_button: => flarum-tags.ref.create_tag
+      primary_heading: "Основные теги"
+      secondary_heading: "Дополнительные теги"
+      settings_button: "Настройки"
+
+  # Strings in this namespace are used by the forum user interface.
+  forum:
+
+    # These strings are used by the Choose Tags modal dialog.
+    choose_tags:
+      choose_primary_placeholder: "Укажите основной тег|Укажите {count} основные теги"
+      choose_secondary_placeholder: "Укажите больше 1 тега|Укажите больше {count} тегов"
+      edit_title: "Настройка тегов для {title}"
+      submit_button: => core.ref.okay
+      title: "Укажите теги для Вашей дискуссии"
+
+    # These strings are used by the composer when starting a discussion.
+    composer_discussion:
+      choose_tags_link: "Выбрать теги"
+
+    # These strings are used by the discussion control buttons.
+    discussion_controls:
+      edit_tags_button: "Настроить теги"
+
+    # These strings are used on the index page, peripheral to the discussion list.
+    index:
+      tags_link: => flarum-tags.ref.tags
+      more_link: "Ещё..."
+      untagged_link: "Untagged"
+
+    # These strings are displayed between posts in the post stream.
+    post_stream:
+      added_tags_text: "{username} добавил {tagsAdded}."
+      added_and_removed_tags_text: "{username} добавил {tagsAdded} и удалил {tagsRemoved}."
+      removed_tags_text: "{username} удалил {tagsRemoved}."
+      tags_text: "тег {tags}|теги {tags}"
+
+  # Strings in this namespace are used by the forum and admin interfaces.
+  lib:
+
+    # This string is displayed in place of the name of a tag that's been deleted.
+    deleted_tag_text: "Удалено"
+
+  ##
+  # REUSED STRINGS - These keys should not be used directly in code!
+  ##
+
+  # Strings in this namespace are referenced by two or more unique keys.
+  ref:
+    create_tag: "Создать"
+    name: "Имя"
+    tags: "Теги"
