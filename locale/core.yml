@@ -257,7 +257,7 @@ core:
     # These strings are used in the scrubber to the right of the post stream.
     post_scrubber:
       now_link: "Сейчас"
-      original_post_link: "Первое"
+      original_post_link: "Начало"
       unread_text: "{count} не прочитано"
       viewing_text: "{index} из {count} сообщений|{index} из {count} сообщений"
 
