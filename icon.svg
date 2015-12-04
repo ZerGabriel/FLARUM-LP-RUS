@@ -5,11 +5,11 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   version="1.1"
-   id="svg3388"
-   height="600"
+   viewBox="0 0 9 6"
    width="900"
-   viewBox="0 0 9 6">
+   height="600"
+   id="svg3388"
+   version="1.1">
   <metadata
      id="metadata3400">
     <rdf:RDF>
@@ -25,20 +25,24 @@
   <defs
      id="defs3398" />
   <rect
-     id="rect3390"
-     height="3"
+     style="fill:#ffffff"
+     y="0"
+     x="0"
      width="9"
-     fill="#fff" />
+     height="3"
+     id="rect3390" />
   <rect
-     id="rect3392"
-     height="3"
-     width="9"
+     style="fill:#d52b1e"
+     x="0"
      y="3"
-     fill="#d52b1e" />
-  <rect
-     id="rect3394"
-     height="2"
      width="9"
+     height="3"
+     id="rect3392" />
+  <rect
+     style="fill:#0039a6"
+     x="0"
      y="2"
-     fill="#0039a6" />
+     width="9"
+     height="2"
+     id="rect3394" />
 </svg>
