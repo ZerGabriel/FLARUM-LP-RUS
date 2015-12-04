@@ -39,7 +39,7 @@
   },
   "extra": {
     "flarum-extension": {
-      "title": "Russian",
+      "title": "Русский",
       "icon": {
         "image": "icon.svg",
         "backgroundColor": "#fff",
@@ -49,7 +49,7 @@
     },
     "flarum-locale": {
       "code": "ru",
-      "title": "Russian"
+      "title": "Русский"
     }
   }
 }
