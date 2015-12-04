@@ -32,7 +32,7 @@ flarum-tags:
     # These strings are used in the Permissions page of the admin interface.
     permissions:
       restrict_by_tag_heading: "Разграничение по тегу"
-      tag_discussions_label: "Tag discussions"
+      tag_discussions_label: "Править теги дискуссий"
 
     # These strings are used in the Tag Settings modal dialog.
     tag_settings:
