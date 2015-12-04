@@ -36,29 +36,29 @@ core:
     # These strings are used in the Dashboard page.
     dashboard:
       beta_warning_text: "Это <strong>бета-версия</strong> программного обеспечения, разработанная для того, чтобы помочь нам протестировать работоспособность всех функции движка. Бета-версия не должна использоваться на уже работающих сообществах."
-      contributing_text: "Хотите искать ошибки и помогать в разработке? Прочитайте документы <a>Contributing</a>."
-      extension_text: "Заинтересованы в разработке расширений? Прочитайте документы <a>Extension</a>."
+      contributing_text: "Хотите искать ошибки и помогать в разработке? Прочитайте <a>Contributing</a>."
+      extension_text: "Заинтересованы в разработке расширений? Прочитайте <a>Extension</a>."
       features_text: "Имеются идеи для улучшения функций? Расскажите об этом нам в теге <a>Features</a>."
       support_text: "Наши ошибку? Пожалуйста, сообщите об этом нам в теге <a>Support</a>."
-      troubleshooting_text: "Имеются проблемы? Следуйте инструкциям в документе <a>Troubleshooting</a>."
+      troubleshooting_text: "Имеются проблемы? Следуйте инструкциям в <a>Troubleshooting</a>."
       version_text: "Благодарим за выбор Flarum! Вы используете версию {version}. Пакет локализации разработан CYBERSPACE.Industries. Техническая поддержка: Flarum.HELP."
 
     # These strings are used in the Edit Group modal dialog.
     edit_group:
       color_label: "Цвет"
       delete_button: "Удалить группу"
-      delete_confirmation: "Вы уверены, что хотите удалить эту группу? Пользователи, находящиеся в этой группе, не будут удалены."
+      delete_confirmation: "Вы уверены, что хотите удалить группу? Пользователи, находящиеся в этой группе, не будут удалены."
       icon_label: "Иконка"
       icon_text: "Введите название любого класса иконки <a>FontAwesome</a>, <em>без</em> префикса <code>fa-</code>."
-      name_label: "Имя"
+      name_label: "Название"
       plural_placeholder: "Множественное число (т.е. Модеры)"
       singular_placeholder: "Единственное число (т.е. Модер)"
       submit_button: => core.ref.save_changes
-      title: "Создать группу"
+      title: "Создание группы"
 
     # These strings are used in the Extensions page.
     extensions:
-      add_button: "Добавить"
+      add_button: "Добавить расширение"
       disable_button: "Отключить"
       enable_button: "Включить"
       settings_button: => core.ref.settings
@@ -90,24 +90,24 @@ core:
       allow_renaming_label: "Разрешить переименование"
       allow_post_editing_label: "Разрешить править сообщение"
       create_heading: "Создание"
-      delete_discussions_forever_label: "Удалять дискуссии навсегда"
+      delete_discussions_forever_label: "Удалять дискуссии (физически)"
       delete_discussions_label: "Удалять дискуссии"
-      delete_posts_forever_label: "Удалять сообщения навсегда"
+      delete_posts_forever_label: "Удалять сообщения (физически)"
       edit_and_delete_posts_label: "Править и удалять сообщения"
       global_heading: "Глобальные"
-      moderate_heading: "Модерирование"
+      moderate_heading: "Модерация"
       new_group_button: "Новая группа"
       participate_heading: "Участие"
       read_heading: "Чтение"
       rename_discussions_label: "Переименовывать дискуссии"
       reply_to_discussions_label: "Отвечать в дискуссии"
       sign_up_label: "Регистрация"
-      start_discussions_label: "Начать дискуссию"
+      start_discussions_label: "Создать дискуссии"
       view_discussions_label: "Читать дискуссию"
 
     # These strings are used in the dropdown menus on the Permissions page.
     permissions_controls:
-      allow_indefinitely_button: "Бесконечно"
+      allow_indefinitely_button: "Неограниченно"
       allow_some_minutes_button: "На {count} минуты|На {count} минут"
       allow_ten_minutes_button: "На 10 минут"
       allow_until_reply_button: "До ответа"
@@ -142,7 +142,7 @@ core:
     # These strings are used by the composer when starting a discussion.
     composer_discussion:
       body_placeholder: "Написать сообщение..."
-      discard_confirmation: "Вы не отправили сообщение. Вы хотите отменить сообщение?"
+      discard_confirmation: "Вы не создали дискуссию. Вы хотите отменить дискуссию?"
       submit_button: "Отправить"
       title_placeholder: "Название дискуссии"
 
@@ -165,7 +165,7 @@ core:
       cannot_reply_button: "Невозможно ответить"
       cannot_reply_text: "У Вас нет прав доступа для публикации ответа в этой дискуссии."
       delete_button: => core.ref.delete
-      delete_confirmation: "Вы уверены, что хотите удалить эту дискуссию?"
+      delete_confirmation: "Вы уверены, что хотите удалить дискуссию?"
       delete_forever_button: => core.ref.delete_forever
       log_in_to_reply_button: "Войти для ответа"
       rename_button: "Переименовать"
@@ -178,8 +178,8 @@ core:
       empty_text: "Кажется, здесь нет дискуссий. Почему бы Вам не создать новую?"
       load_more_button: => core.ref.load_more
       mark_as_read_tooltip: "Отметить как прочитанное"
-      replied_text: "{username} ответил {ago}"
-      started_text: "{username} создал {ago}"
+      replied_text: "{username} ответил(а) {ago}"
+      started_text: "{username} создал(а) {ago}"
 
     # These strings are used in the Edit User modal dialog (admin function).
     edit_user:
@@ -210,7 +210,7 @@ core:
     # These strings are used on the index page, peripheral to the discussion list.
     index:
       all_discussions_link: => core.ref.all_discussions
-      cannot_start_discussion_button: Can't Start Discussion
+      cannot_start_discussion_button: "Невозможно создать дискуссию"
       mark_all_as_read_tooltip: => core.ref.mark_all_as_read
       refresh_tooltip: "Обновить"
       start_discussion_button: "Создать дискуссию"
@@ -220,12 +220,12 @@ core:
       latest_button: "Последние"
       newest_button: "Новые"
       oldest_button: "Старые"
-      relevance_button: "Релевантность"
-      top_button: "TOP"
+      relevance_button: "По релевантности"
+      top_button: "Популярные"
 
     # These strings are used in the Log In modal dialog.
     log_in:
-      confirmation_required_message: "Вам необходимо подтвердить свой E-mail прежде чем Вы сможете войти. Мы отправили письмо с подтверждением на адрес {email}. Если Вы не получите письмо в ближайшее время, проверьте папку со спамом."
+      confirmation_required_message: "Вам необходимо подтвердить свой E-mail перед тем, как Вы сможете войти. Мы отправили письмо с подтверждением на адрес {email}. Если Вы не получите письмо в ближайшее время, проверьте папку со спамом."
       forgot_password_link: "Забыли пароль?"
       invalid_login_message: "Ваши данные для входа некорректны."
       password_placeholder: => core.ref.password
@@ -236,15 +236,15 @@ core:
 
     # These strings are used by the Notifications dropdown, a.k.a. "the bell".
     notifications:
-      discussion_renamed_text: "{username} изменил название"
-      empty_text: "Нет уведомлений"
+      discussion_renamed_text: "{username} изменил(а) название"
+      empty_text: "Нет оповещений"
       mark_all_as_read_tooltip: => core.ref.mark_all_as_read
       title: => core.ref.notifications
       tooltip: => core.ref.notifications
 
     # These strings are used by tooltips displayed for individual posts.
     post:
-      edited_tooltip: "{username} отредактировал {ago}"
+      edited_tooltip: "{username} отредактировал(а) {ago}"
       number_tooltip: "Сообщение #{number}"
 
     # These strings are used by the post control buttons.
@@ -257,19 +257,19 @@ core:
     # These strings are used in the scrubber to the right of the post stream.
     post_scrubber:
       now_link: "Сейчас"
-      original_post_link: "Оригинал"
+      original_post_link: "Первое"
       unread_text: "{count} не прочитано"
-      viewing_text: "{index} из {count} сообщение|{index} из {count} сообщений"
+      viewing_text: "{index} из {count} сообщения|{index} из {count} сообщений"
 
     # These strings are displayed between posts in the post stream.
     post_stream:
-      discussion_renamed_text: "{username} изменил название с {old} на {new}."
+      discussion_renamed_text: '{username} изменил(а) название с "{old}" на "{new}".'
       reply_placeholder: => core.ref.write_a_reply
       time_lapsed_text: "{period} позже"
 
     # These strings are used by the search results dropdown list.
     search:
-      all_discussions_button: 'Искать по всем дискуссиям "{query}"'
+      all_discussions_button: 'Поиск по запросу: "{query}"'
       discussions_heading: => core.ref.discussions
       users_heading: "Пользователи"
 
@@ -304,7 +304,7 @@ core:
       avatar_upload_button: "Загрузить"
       bio_placeholder: "Напишите что-нибудь о себе"
       discussions_link: => core.ref.discussions
-      joined_date_text: "Регистрация {ago}"
+      joined_date_text: "Регистрация: {ago}"
       online_text: "В сети"
       posts_load_more_button: => core.ref.load_more
       posts_link: "Сообщения"
@@ -314,7 +314,7 @@ core:
     user_controls:
       button: "Управление"
       delete_button: => core.ref.delete
-      delete_confirmation: "Вы уверены, что хотите удалить этого пользователя? Все сообщения пользователя будут удалены."
+      delete_confirmation: "Вы уверены, что хотите удалить пользователя? Все сообщения пользователя также будут удалены."
       edit_button: => core.ref.edit
 
   # Strings in this namespace are used by the forum and admin interfaces.
@@ -322,17 +322,17 @@ core:
 
     # These strings are displayed as tooltips for discussion badges.
     badge:
-      hidden_tooltip: "Скрытый"
+      hidden_tooltip: "Обсуждение скрыто"
 
     # This string is displayed in place of the username of deleted user account.
-    deleted_user_text: "[удалено]"
+    deleted_user_text: "[удалён]"
 
     # These strings are displayed as error messages.
     error:
       generic_message: "Упс! Что-то пошло не так. Пожалуйста, обновите страницу и попробуйте ещё раз."
       permission_denied_message: "У Вас нет прав доступа для выполнения этого действия."
       not_found_message: "Запрашиваемый ресурс не найден."
-      rate_limit_exceeded_message: "Вы слишком быстры. Пожалуйста, попробуйте ещё раз через несколько секунд."
+      rate_limit_exceeded_message: "Вы размещаете сообщения слишком часто. Пожалуйста, попробуйте ещё раз через несколько секунд."
 
     # These strings are used as suffixes when abbreviating numbers.
     number_suffix:
@@ -348,7 +348,7 @@ core:
   # Strings in this namespace are used in basic HTML interface.
   basic:
     loading_text: "Загрузка..."
-    load_error_message: "Что-то пошло не так при попытке загрузить полную версию этого сайта."
+    load_error_message: "Что-то пошло не так при попытке загрузки полной версии этого сайта."
     javascript_disabled_message: "Этот сайт лучше всего просматривать в современном браузере с включённым JavaScript."
     next_page_button: "Следующая страница"
     previous_page_button: "Предыдущая страница"
@@ -364,7 +364,7 @@ core:
     change_password: "Изменить пароль"
     confirmation_email_sent: "Мы отправили письмо с подтверждением на адрес {email}. Если Вы не получите письмо в ближайшее время, проверьте папку со спамом."
     delete: "Удалить"
-    delete_forever: "Удалить навсегда"
+    delete_forever: "Удалить (физически)"
     discussions: "Дискуссии"
     edit: "Править"
     email: "E-mail"
@@ -372,7 +372,7 @@ core:
     log_in: "Войти"
     log_out: "Выйти"
     mark_all_as_read: "Отметить всё как прочитанное"
-    notifications: "Уведомления"
+    notifications: "Оповещения"
     okay: "OK"                                     # Referenced by flarum-tags.yml
     password: "Пароль"
     reply: "Ответить"                                 # Referenced by flarum-mentions.yml

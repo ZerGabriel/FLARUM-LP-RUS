@@ -16,8 +16,8 @@ flarum-tags:
       color_label: "Цвет"
       description_label: "Описание"
       delete_tag_button: "Удалить"
-      delete_tag_confirmation: "Вы уверены, что хотите удалить этот тег? Дискуссии, отмеченные этим тегом, удалены НЕ будут."
-      hide_label: "Скрыть из Все дискуссии"
+      delete_tag_confirmation: "Вы уверены, что хотите удалить тег? Дискуссии, отмеченные этим тегом, удалены НЕ будут."
+      hide_label: "Скрыть из списка дискуссий"
       name_label: => flarum-tags.ref.name
       name_placeholder: => flarum-tags.ref.name
       slug_label: "Путь"
@@ -31,7 +31,7 @@ flarum-tags:
 
     # These strings are used in the Permissions page of the admin interface.
     permissions:
-      restrict_by_tag_heading: "Разграничение по тегу"
+      restrict_by_tag_heading: "Ограничение по тегу"
       tag_discussions_label: "Править теги дискуссий"
 
     # These strings are used in the Tag Settings modal dialog.
@@ -41,7 +41,7 @@ flarum-tags:
       required_primary_text: "Введите минимальное и максимальное число основных тегов, которые будут добавлены к дискуссии."
       required_secondary_heading: "Количество дополнительных тегов"
       required_secondary_text: "Введите минимальное и максимальное число дополнительных тегов, которые будут добавлены к дискуссии."
-      title: "Настройка"
+      title: "Настройки тега"
 
     # These strings are used in the Tags page.
     tags:
@@ -56,9 +56,9 @@ flarum-tags:
 
     # These strings are used by the Choose Tags modal dialog.
     choose_tags:
-      choose_primary_placeholder: "Укажите основной тег|Укажите {count} основные теги"
+      choose_primary_placeholder: "Укажите основной тег|Укажите {count} основных тегов"
       choose_secondary_placeholder: "Укажите больше 1 тега|Укажите больше {count} тегов"
-      edit_title: "Настройка тегов для {title}"
+      edit_title: "Настройка тегов: {title}"
       submit_button: => core.ref.okay
       title: "Укажите теги для Вашей дискуссии"
 
@@ -78,9 +78,9 @@ flarum-tags:
 
     # These strings are displayed between posts in the post stream.
     post_stream:
-      added_tags_text: "{username} добавил {tagsAdded}."
-      added_and_removed_tags_text: "{username} добавил {tagsAdded} и удалил {tagsRemoved}."
-      removed_tags_text: "{username} удалил {tagsRemoved}."
+      added_tags_text: "{username} добавил(а) {tagsAdded}."
+      added_and_removed_tags_text: "{username} добавил(а) {tagsAdded} и удалил(а) {tagsRemoved}."
+      removed_tags_text: "{username} удалил(а) {tagsRemoved}."
       tags_text: "тег {tags}|теги {tags}"
 
   # Strings in this namespace are used by the forum and admin interfaces.
@@ -96,5 +96,5 @@ flarum-tags:
   # Strings in this namespace are referenced by two or more unique keys.
   ref:
     create_tag: "Создать"
-    name: "Имя"
+    name: "Название"
     tags: "Теги"

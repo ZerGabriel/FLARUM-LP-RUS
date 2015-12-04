@@ -10,12 +10,12 @@ flarum-flags:
     # These strings are used in the Permissions page of the admin interface.
     permissions:
       flag_posts_label: "Жаловаться на сообщения"
-      view_flags_label: "Смотреть сообщения с жалобами"
+      view_flags_label: "Смотреть сообщения на модерации"
 
     # These strings are used in the Flags Settings modal dialog.
     settings:
       guidelines_url_label: "Правила сообщества (URL)"
-      title: "Настройки жалоб"
+      title: "Настройки"
 
   # Strings in this namespace are used by the forum user interface.
   forum:
@@ -36,15 +36,15 @@ flarum-flags:
 
     # These strings are used by the Flagged Posts dropdown, a.k.a. "the flag".
     flagged_posts:
-      empty_text: "Нет жалоб"
+      empty_text: "Нет сообщений на модерации"
       title: => flarum-flags.ref.flagged_posts
       tooltip: => flarum-flags.ref.flagged_posts
 
     # These strings are used by the frame displayed around flagged posts.
     post:
       dismiss_flag_tooltip: "Отклонить жалобу"
-      flagged_by_text: "{username} пожаловался"
-      flagged_by_with_reason_text: "{username} пожаловался, причина: {reason}"
+      flagged_by_text: "{username} оставил(а) жалобу на сообщение"
+      flagged_by_with_reason_text: "{username} оставил(а) жалобу на сообщение, причина: {reason}"
 
     # These strings are used by the post control buttons.
     post_controls:
@@ -56,5 +56,5 @@ flarum-flags:
 
   # Strings in this namespace are referenced by two or more unique keys.
   ref:
-    flag_post: "Сообщение с жалобой"
-    flagged_posts: "Сообщения с жалобами"
+    flag_post: "Отправить"
+    flagged_posts: "Сообщения на модерации"
