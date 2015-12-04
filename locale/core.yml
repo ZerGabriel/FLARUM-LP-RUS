@@ -38,8 +38,8 @@ core:
       beta_warning_text: "Это <strong>бета-версия</strong> программного обеспечения, разработанная для того, чтобы помочь нам протестировать работоспособность всех функции движка. Бета-версия не должна использоваться на уже работающих сообществах."
       contributing_text: "Хотите искать ошибки и помогать в разработке? Прочитайте <a>Contributing</a>."
       extension_text: "Заинтересованы в разработке расширений? Прочитайте <a>Extension</a>."
-      features_text: "Имеются идеи для улучшения функций? Расскажите об этом нам в категории <a>Features</a>."
-      support_text: "Наши ошибку? Пожалуйста, сообщите об этом нам в категории <a>Support</a>."
+      features_text: "Имеются идеи для улучшения функций? Расскажите об этом нам в разделе <a>Features</a>."
+      support_text: "Наши ошибку? Пожалуйста, сообщите об этом нам в разделе <a>Support</a>."
       troubleshooting_text: "Имеются проблемы? Следуйте инструкциям в <a>Troubleshooting</a>."
       version_text: "Благодарим за выбор Flarum! Вы используете версию {version}. Пакет локализации разработан CYBERSPACE.Industries. Техническая поддержка: Flarum.HELP."
 
@@ -74,9 +74,9 @@ core:
 
     # These strings are used in the navigation bar.
     nav:
-      appearance_button: "Внешность"
+      appearance_button: "Внешний вид"
       appearance_text: "Настройка цветов, логотипов и других переменных."
-      basics_button: "Основы"
+      basics_button: "Основные настройки"
       basics_text: "Настройка названия форума, локализации и других базовых параметров."
       dashboard_button: "Консоль"
       dashboard_text: "Первый взгляд на Ваш форум."
@@ -259,7 +259,7 @@ core:
       now_link: "Сейчас"
       original_post_link: "Первое"
       unread_text: "{count} не прочитано"
-      viewing_text: "{index} из {count} сообщения|{index} из {count} сообщений"
+      viewing_text: "{index} из {count} сообщений|{index} из {count} сообщений"
 
     # These strings are displayed between posts in the post stream.
     post_stream:

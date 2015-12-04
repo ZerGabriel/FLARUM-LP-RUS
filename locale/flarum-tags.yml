@@ -16,7 +16,7 @@ flarum-tags:
       color_label: "Цвет"
       description_label: "Описание"
       delete_tag_button: "Удалить"
-      delete_tag_confirmation: "Вы уверены, что хотите удалить категорию? Дискуссии в этой категории удалены НЕ будут."
+      delete_tag_confirmation: "Вы уверены, что хотите удалить раздел? Дискуссии в этом разделе удалены НЕ будут."
       hide_label: "Скрыть из списка дискуссий"
       name_label: => flarum-tags.ref.name
       name_placeholder: => flarum-tags.ref.name
@@ -27,28 +27,28 @@ flarum-tags:
     # These strings are used in the navigation bar.
     nav:
       tags_button: => flarum-tags.ref.tags
-      tags_text: "Управление списком категорий, доступных для структурирования дискуссий."
+      tags_text: "Управление списком разделов, доступных для структурирования дискуссий."
 
     # These strings are used in the Permissions page of the admin interface.
     permissions:
-      restrict_by_tag_heading: "Ограничение по категории"
-      tag_discussions_label: "Править категории дискуссий"
+      restrict_by_tag_heading: "Ограничение по разделу"
+      tag_discussions_label: "Править разделы дискуссий"
 
     # These strings are used in the Tag Settings modal dialog.
     tag_settings:
       range_separator_text: " - "
-      required_primary_heading: "Количество основных категорий"
-      required_primary_text: "Введите минимальное и максимальное число основных категорий, в которые будет добавлена дискуссия."
-      required_secondary_heading: "Количество дополнительных категорий"
-      required_secondary_text: "Введите минимальное и максимальное число дополнительных категорий, в которые будет добавлена дискуссия."
-      title: "Настройки категорий"
+      required_primary_heading: "Количество основных разделов"
+      required_primary_text: "Введите минимальное и максимальное число основных разделов, в которые будет добавлена дискуссия."
+      required_secondary_heading: "Количество дополнительных разделов"
+      required_secondary_text: "Введите минимальное и максимальное число дополнительных разделов, в которые будет добавлена дискуссия."
+      title: "Настройки разделов"
 
     # These strings are used in the Tags page.
     tags:
-      about_tags_text: "Категории используются для структурирования дискуссий. Основные категории могут представлять собой двухуровневую иерархию. Дополнительные категории не имеют иерархии и могут быть полезны для микро-структурирования."
+      about_tags_text: "Разделы используются для структурирования дискуссий. Основные разделы могут представлять собой двухуровневую иерархию. Дополнительные разделы не имеют иерархии и могут быть полезны для микро-структурирования."
       create_tag_button: => flarum-tags.ref.create_tag
-      primary_heading: "Основные категории"
-      secondary_heading: "Дополнительные категории"
+      primary_heading: "Основные разделы"
+      secondary_heading: "Дополнительные разделы"
       settings_button: "Настройки"
 
   # Strings in this namespace are used by the forum user interface.
@@ -56,32 +56,32 @@ flarum-tags:
 
     # These strings are used by the Choose Tags modal dialog.
     choose_tags:
-      choose_primary_placeholder: "Укажите основную категорию|Укажите {count} основных категорий"
-      choose_secondary_placeholder: "Укажите больше 1 категории|Укажите больше {count} категорий"
-      edit_title: "Настройка категорий: {title}"
+      choose_primary_placeholder: "Укажите основной раздел|Укажите {count} основных разделов"
+      choose_secondary_placeholder: "Укажите больше 1 раздела|Укажите больше {count} разделов"
+      edit_title: "Настройка разделов: {title}"
       submit_button: => core.ref.okay
-      title: "Укажите категории для Вашей дискуссии"
+      title: "Укажите разделы для Вашей дискуссии"
 
     # These strings are used by the composer when starting a discussion.
     composer_discussion:
-      choose_tags_link: "Выбрать категории"
+      choose_tags_link: "Выбрать разделы"
 
     # These strings are used by the discussion control buttons.
     discussion_controls:
-      edit_tags_button: "Настроить категории"
+      edit_tags_button: "Править разделы"
 
     # These strings are used on the index page, peripheral to the discussion list.
     index:
       tags_link: => flarum-tags.ref.tags
       more_link: "Ещё..."
-      untagged_link: "Untagged"
+      untagged_link: "Вне разделов"
 
     # These strings are displayed between posts in the post stream.
     post_stream:
       added_tags_text: "{username} добавил(а) {tagsAdded}."
       added_and_removed_tags_text: "{username} добавил(а) {tagsAdded} и удалил(а) {tagsRemoved}."
       removed_tags_text: "{username} удалил(а) {tagsRemoved}."
-      tags_text: "категория {tags}|категории {tags}"
+      tags_text: "раздел {tags}|разделы {tags}"
 
   # Strings in this namespace are used by the forum and admin interfaces.
   lib:
@@ -95,6 +95,6 @@ flarum-tags:
 
   # Strings in this namespace are referenced by two or more unique keys.
   ref:
-    create_tag: "Создать"
+    create_tag: "Создать раздел"
     name: "Название"
-    tags: "Категории"
+    tags: "Разделы"
