@@ -210,7 +210,7 @@ core:
     # These strings are used on the index page, peripheral to the discussion list.
     index:
       all_discussions_link: => core.ref.all_discussions
-      cannot_start_discussion_button: "Невозможно создать дискуссию"
+      cannot_start_discussion_button: "Невозможно создать"
       mark_all_as_read_tooltip: => core.ref.mark_all_as_read
       refresh_tooltip: "Обновить"
       start_discussion_button: "Создать дискуссию"

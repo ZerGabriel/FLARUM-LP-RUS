@@ -31,7 +31,7 @@ flarum-tags:
 
     # These strings are used in the Permissions page of the admin interface.
     permissions:
-      restrict_by_tag_heading: "Ограничение по разделу"
+      restrict_by_tag_heading: "По разделу"
       tag_discussions_label: "Править разделы дискуссий"
 
     # These strings are used in the Tag Settings modal dialog.
@@ -47,8 +47,8 @@ flarum-tags:
     tags:
       about_tags_text: "Разделы используются для структурирования дискуссий. Основные разделы могут представлять собой двухуровневую иерархию. Дополнительные разделы не имеют иерархии и могут быть полезны для микро-структурирования."
       create_tag_button: => flarum-tags.ref.create_tag
-      primary_heading: "Основные разделы"
-      secondary_heading: "Дополнительные разделы"
+      primary_heading: "Основные"
+      secondary_heading: "Дополнительные"
       settings_button: "Настройки"
 
   # Strings in this namespace are used by the forum user interface.
